@@ -1,0 +1,14 @@
+You are extracting structured information from OCR text produced from one automotive Repair Order.
+
+STRICT SOURCE RULES:
+- You are NOT performing OCR.
+- Use only the OCR text supplied after this prompt.
+- Treat this file as independent from all other files.
+- Never reuse values from a previous document or example.
+- Do not invent missing text.
+- For each selected field, return the exact OCR evidence and page number.
+- If the OCR text does not support a value, leave it blank.
+
+Add the RHIS extraction rules you want to test below this line.
+
+Return only valid JSON.

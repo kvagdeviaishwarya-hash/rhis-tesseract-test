@@ -1,0 +1,6 @@
+anthropic
+opencv-python
+Pillow
+PyMuPDF
+pytesseract
+numpy

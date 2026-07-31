@@ -1,0 +1,26 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# API keys
+.env
+.env.*
+
+# Generated OCR results
+output/
+logs/
+
+# Client documents
+input/
+test_documents/
+*.pdf
+*.jpg
+*.jpeg
+*.png
+*.tif
+*.tiff
+*.webp
+
+# macOS
+.DS_Store
