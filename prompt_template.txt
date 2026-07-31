@@ -1,14 +1,16 @@
-You are extracting structured information from OCR text produced from one automotive Repair Order.
+You are extracting structured information from Tesseract OCR text produced
+from one automotive Repair Order.
 
-STRICT SOURCE RULES:
+CRITICAL SOURCE RULES:
+
 - You are NOT performing OCR.
+- You are not viewing the original PDF or document image.
 - Use only the OCR text supplied after this prompt.
-- Treat this file as independent from all other files.
-- Never reuse values from a previous document or example.
-- Do not invent missing text.
-- For each selected field, return the exact OCR evidence and page number.
-- If the OCR text does not support a value, leave it blank.
-
-Add the RHIS extraction rules you want to test below this line.
-
-Return only valid JSON.
+- Do not invent, guess, calculate, or reconstruct text that is missing
+  from the OCR output.
+- Treat this Repair Order as independent from every other file.
+- Never reuse a value from a previous document, prompt example, or extraction.
+- Every returned value must be supported by text present in the supplied OCR.
+- If the OCR does not clearly support a value, return the required blank,
+  Unknown, 0, or empty array.
+- Return only one valid JSON object.
